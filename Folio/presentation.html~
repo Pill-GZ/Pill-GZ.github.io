@@ -219,6 +219,18 @@ class: top
 
 ---
 class: top
+
+# Data set - standardization
+
+* A look at the averages...
+
+<center>
+<img src="averages.png" style="height: 16em"> &nbsp;
+</center>
+
+
+---
+class: top
 # How low can the number of pixels go?
 
 <center>
@@ -300,14 +312,84 @@ A glimpse of the data in 3D, the first two PC scores and aspect ratios, of the f
 ---
 class: top
 
-# Some PCA stuff here
+# Some PCA stuff here - Rounak?
 
 
 ---
 class: top
 
+# Classification - Regression Trees
 
 
+---
+class: top
+
+# Classification - KNN
+##### 8 fold cross validation to scale the aspect-ratio, and choose k
+
+<center>
+<img src="CV.gif" style="height: 18em">
+</center>
+
+
+---
+class: top
+
+# Classification - Results
+
+### Achieved ~92.5% accuracy on 15 species
+
+### Achieved ~89.5% accuracy on 26 species
+
+### Some species appear to be more difficult to classify - We'll see why, through clustering
+
+---
+class: top
+
+# Clustering - Hierarchical
+
+
+---
+class: top
+
+# Clustering - K-means
+
+
+---
+class: top
+
+# Clustering - Soft K-means
+
+
+---
+class: top
+
+# Some typical errors identified
+<center>
+<img src="typical errors/bad papaya.jpg" style="width: 5em"> &nbsp;&nbsp;
+<img src="typical errors/average chocolate tree.png" style="width: 5em"> &nbsp;&nbsp;
+<img src="typical errors/average papaya.png" style="width: 5em"> &nbsp;&nbsp;
+</center>
+
+<center>
+<img src="typical errors/bad ketembilla.jpg" style="width: 5em"> &nbsp;&nbsp;
+<img src="typical errors/average ashanti blood.png" style="width: 5em"> &nbsp;&nbsp;
+<img src="typical errors/average ketembilla.png" style="width: 5em"> &nbsp;&nbsp;
+</center>
+
+---
+class: top
+
+# Some typical errors identified
+<center>
+<img src="typical errors/bad star apple.jpg" style="width: 6em"> &nbsp;&nbsp;
+<img src="typical errors/average pomme jacquot.png" style="width: 6em"> &nbsp;&nbsp;
+<img src="typical errors/bad pomme jacquot.jpg" style="width: 6em"> &nbsp;&nbsp;
+<img src="typical errors/average star apple.png" style="width: 6em"> &nbsp;&nbsp;
+</center>
+
+
+* Classifier identifies overall shapes, but is not able to pick up detailed, distinct features salient to human eyes
 
 ---
 class: middle
