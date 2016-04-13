@@ -234,7 +234,7 @@ class: top
 class: top
 # Dimension reduction with PCA
 
-* Idea: represent the images with low-dim'l vectors and 'eigen-images'
+* Idea: represent the images with low-dim vectors and 'eigen-images'
 
 * Vectorize standardized images and PCA 
   - Example with 3 species: Bitter Orange, Chrysanthemum, Hibiscus
@@ -252,7 +252,7 @@ class: top
 class: top
 # Dimension reduction with PCA
 
-* Idea: represent the images with low-dim'l vectors and 'eigen-images'
+* Idea: represent the images with low-dim vectors and 'eigen-images'
 
 * Vectorize standardized images and PCA 
   - Example with 3 species: Bitter Orange, Chrysanthemum, Hibiscus
@@ -294,6 +294,20 @@ class: middle
 <center>
 A glimpse of the data in 3D, the first two PC scores and aspect ratios, of the first 8 species.
 </center>
+
+
+
+---
+class: top
+
+# Some PCA stuff here
+
+
+---
+class: top
+
+
+
 
 ---
 class: middle
