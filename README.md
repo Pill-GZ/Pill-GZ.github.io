@@ -1,2 +1,3 @@
 # Pill-GZ.github.io
-Personal webpage
+This is going to be a personal webpage
+I am still trying to figure out how this works
