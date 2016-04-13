@@ -234,7 +234,7 @@ class: top
 class: top
 # Dimension reduction with PCA
 
-* Idea: represent the images with low-dim vectors and 'eigen-images'
+* Idea: represent the images with low-dim'l vectors and 'eigen-images'
 
 * Vectorize standardized images and PCA 
   - Example with 3 species: Bitter Orange, Chrysanthemum, Hibiscus
@@ -252,7 +252,7 @@ class: top
 class: top
 # Dimension reduction with PCA
 
-* Idea: represent the images with low-dim vectors and 'eigen-images'
+* Idea: represent the images with low-dim'l vectors and 'eigen-images'
 
 * Vectorize standardized images and PCA 
   - Example with 3 species: Bitter Orange, Chrysanthemum, Hibiscus
