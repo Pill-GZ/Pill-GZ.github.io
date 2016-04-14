@@ -132,7 +132,7 @@ class: center, middle, inverse
 
 ### $\quad \sim \quad$ Classification and Clustering
 
-### $\quad \sim \quad$ Extras
+### $\quad \sim \quad$ Conclusions
 
 
 ---
@@ -234,7 +234,7 @@ class: top
 # How low can the number of pixels go?
 
 <center>
-<img src="pixelated cat.jpg" style="height: 16em">
+<img src="pixelated cat.jpg" style="height: 14em">
 </center>
 * For humans, ~ 12 by 30 is sufficient for identification of a species
 --
@@ -325,10 +325,10 @@ class: top
 class: top
 
 # Classification - KNN
-##### 8 fold cross validation to scale the aspect-ratio, and choose k
+### 8 fold cross validation to scale the aspect-ratio, and choose k
 
 <center>
-<img src="CV.gif" style="height: 18em">
+<img src="CV.gif" style="height: 16em">
 </center>
 
 
@@ -339,9 +339,23 @@ class: top
 
 ### Achieved ~92.5% accuracy on 15 species
 
+<center>
+<img src="classification/Half data error rates.png" style="height: 14em">
+</center>
+
+---
+class: top
+
+# Classification - Results
+
+
 ### Achieved ~89.5% accuracy on 26 species
 
-### Some species appear to be more difficult to classify - We'll see why, through clustering
+<center>
+<img src="classification/Full data error rates.png" style="height: 14em">
+</center>
+
+#### Some species appear to be more difficult to classify - We'll see why, through clustering
 
 ---
 class: top
