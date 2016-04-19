@@ -553,6 +553,8 @@ class: top
 
 * Achieved ~88.5% accuracy on 26 species
 
+compared to 83.5% accuracy in $[2001]$
+
 ### Some species appear to be more difficult to classify - We'll see why, through clustering
 
 
@@ -609,14 +611,14 @@ class: top
 Papaya misclassified as Chocolate Tree
 <center>
 <img src="typical errors/bad papaya.jpg" style="width: 4.5em"> &nbsp;&nbsp;
-<img src="typical errors/average chocolate tree.png" style="width: 5em"> &nbsp;&nbsp;
-<img src="typical errors/average papaya.png" style="width: 5em"> &nbsp;&nbsp;
+<img src="typical errors/average chocolate tree.png" style="width: 4.5em"> &nbsp;&nbsp;
+<img src="typical errors/average papaya.png" style="width: 4.5em"> &nbsp;&nbsp;
 </center>
 Ketembilla misclassified as Ashanti Blood
 <center>
-<img src="typical errors/bad ketembilla.jpg" style="width: 5em"> &nbsp;&nbsp;
-<img src="typical errors/average ashanti blood.png" style="width: 5em"> &nbsp;&nbsp;
-<img src="typical errors/average ketembilla.png" style="width: 5em"> &nbsp;&nbsp;
+<img src="typical errors/bad ketembilla.jpg" style="width: 4.5em"> &nbsp;&nbsp;
+<img src="typical errors/average ashanti blood.png" style="width: 4.5em"> &nbsp;&nbsp;
+<img src="typical errors/average ketembilla.png" style="width: 4.5em"> &nbsp;&nbsp;
 </center>
 
 ---
@@ -644,6 +646,8 @@ class: top
 * Iain M. Johnstone. On the distribution of the largest eigenvalue in principal components analysis. Ann. Statist., 29(2):295-327, 04 2001.
 
 * Seunggeun Lee, Fei Zou, and Fred A. Wright. Convergence and prediction of principal component scores in high-dimensional settings. Ann. Statist., 38(6):3605-3629, 12 2010.
+
+* Trishen Munisami, Mahess Ramsurn, Somveer Kishnah, Sameerchand Pudaruth.Plant Leaf Recognition Using Shape Features and Colour Histogram with K-nearest Neighbour Classifiers. Procedia Computer Science., Vol 58, 2015, P740–747
 
 
 ---
