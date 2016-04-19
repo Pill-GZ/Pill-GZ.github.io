@@ -136,30 +136,9 @@ class: center, middle, inverse
 
 
 ---
-class:top
-
-# 15 slides
-
-* A quick look at the data set
-  * visual, very visual
-  * what's difficult?
-* Some dimension reduction techniques
-  * PCA
-  * complicated PCA
-* Classification
-  * KNN
-  * CART
-* Clustering
-  * hierarchical clustering
-  * K-means
-* Epilogue
-
-Here are some slide notes
-
----
 class: top
 
-# Data set - what's in it???
+# Data set - what's in it?
 * Pictures of 32 spiecies, unbalanced. We are using 26 of them with 20 samples each. 
 
 <center>
@@ -172,7 +151,7 @@ class: top
 ---
 class: top
 
-# Data set - what's difficult???
+# Data set - what's difficult?
 
 * irregularities! - all 3 pictures of the same species
   * orientation, shape, color, lighting, position, angle, etc...
@@ -203,8 +182,6 @@ class: top
 
   * standardize the data
   * efficiently represent the data
-
---
 
 * Grey-scaling, Auto-detect image region, sub-sampling, keeping aspect ratio alongside
 
@@ -237,7 +214,6 @@ class: top
 <img src="pixelated cat.jpg" style="height: 14em">
 </center>
 * For humans, ~ 12 by 30 is sufficient for identification of a species
---
 
 * For machines?
   * Original pictures 4000+ by 2000+ pixels, now 100 by 100?
@@ -522,12 +498,25 @@ class: top
 
 # Classification - Regression Trees
 
+* First decision node uses the aspect ratio...
+
+* Most of the branching uses low order PC's
+
+<center>
+<img src="classification/full tree.png" style="height: 13em">
+</center>
+
+CV and test error stand at ~$40\%$.
+
 
 ---
 class: top
 
 # Classification - KNN
-### 8 fold cross validation to scale the aspect-ratio, and choose k
+
+* Aspect ratio needs to be scaled
+
+* optimal k need to be chosen
 
 <center>
 <img src="CV.gif" style="height: 16em">
@@ -537,18 +526,34 @@ class: top
 ---
 class: top
 
-# Classification - Results
+## KNN
 
-### Achieved ~92.5% accuracy on 15 species
-
-### Achieved ~89.5% accuracy on 26 species
-
-### Some species appear to be more difficult to classify - We'll see why, through clustering
+<center>
+<img src="classification/Half data error rates.png" style="height: 16em">
+</center>
+CV and prediction error on half data, k=3 in KNN
 
 ---
 class: top
 
-# Clustering - Hierarchical
+## KNN
+
+<center>
+<img src="classification/Full data error rates.png" style="height: 16em">
+</center>
+CV and prediction error on full data, k=3 in KNN
+
+
+---
+class: top
+
+# Classification - Results
+
+* Achieved ~94.5% accuracy on 15 species
+
+* Achieved ~88.5% accuracy on 26 species
+
+### Some species appear to be more difficult to classify - We'll see why, through clustering
 
 
 ---
@@ -556,40 +561,76 @@ class: top
 
 # Clustering - K-means
 
+<center>
+<img src="clustering/half kmeans choose k.png" style="height: 12em"> &nbsp;&nbsp;
+<img src="clustering/full kmeans choose k.png" style="height: 12em">
+</center>
+
+Choice of K in Kmeans clustering for half data set (left) and for full data set (right).
 
 ---
 class: top
 
-# Clustering - Soft K-means
+# Clustering - K-means
 
+<center>
+<img src="clustering/half clustering.png" style="height: 16em"> 
+</center>
+
+15 species into 10 clusters
+
+---
+class: top
+
+# Clustering - K-means
+
+<!-- ### Half data: species (1,2,10), (18,28), (4,19) and (13,27) are clustered. -->
+
+<!-- ### Full data: species (2,10), (11,18,25,28), (8,17), (1,19), (3,27), and (4,21) are clustered. -->
+
+A quick look at (2,10): (Barbados Cherry, Coeur demoiselle) <center>
+<img src="example leaves/similar leaves/barbados cherry.jpg" style="height: 5em"> &nbsp;&nbsp;
+<img src="example leaves/similar leaves/coeur demoiselle.jpg" style="height: 5em">
+</center>
+(18,28): (Guava, Star apple) <center>
+<img src="example leaves/similar leaves/guava.jpg" style="height: 5em"> &nbsp;&nbsp;
+<img src="example leaves/similar leaves/star apple.jpg" style="height: 5em">
+</center>
+(4,21): (Betel, Ketembilla)
+<center>
+<img src="example leaves/similar leaves/betel2.jpg" style="height: 5em"> &nbsp;&nbsp;
+<img src="example leaves/similar leaves/ketembilla.jpg" style="height: 5em">
+</center>
 
 ---
 class: top
 
 # Some typical errors identified
+Papaya misclassified as Chocolate Tree
 <center>
-<img src="typical errors/bad papaya.jpg" style="width: 5em"> &nbsp;&nbsp;
-<img src="typical errors/average chocolate tree.png" style="width: 5em"> &nbsp;&nbsp;
-<img src="typical errors/average papaya.png" style="width: 5em"> &nbsp;&nbsp;
+<img src="typical errors/bad papaya.jpg" style="width: 4.5em"> &nbsp;&nbsp;
+<img src="typical errors/average chocolate tree.png" style="width: 4.5em"> &nbsp;&nbsp;
+<img src="typical errors/average papaya.png" style="width: 4.5em"> &nbsp;&nbsp;
 </center>
-
+Ketembilla misclassified as Ashanti Blood
 <center>
-<img src="typical errors/bad ketembilla.jpg" style="width: 5em"> &nbsp;&nbsp;
-<img src="typical errors/average ashanti blood.png" style="width: 5em"> &nbsp;&nbsp;
-<img src="typical errors/average ketembilla.png" style="width: 5em"> &nbsp;&nbsp;
+<img src="typical errors/bad ketembilla.jpg" style="width: 4.5em"> &nbsp;&nbsp;
+<img src="typical errors/average ashanti blood.png" style="width: 4.5em"> &nbsp;&nbsp;
+<img src="typical errors/average ketembilla.png" style="width: 4.5em"> &nbsp;&nbsp;
 </center>
 
 ---
 class: top
 
 # Some typical errors identified
+
+Star Apple and Pomme Jacquot
 <center>
 <img src="typical errors/bad star apple.jpg" style="width: 6em"> &nbsp;&nbsp;
 <img src="typical errors/average pomme jacquot.png" style="width: 6em"> &nbsp;&nbsp;
 <img src="typical errors/bad pomme jacquot.jpg" style="width: 6em"> &nbsp;&nbsp;
 <img src="typical errors/average star apple.png" style="width: 6em"> &nbsp;&nbsp;
 </center>
-
 
 * Classifier identifies overall shapes, but is not able to pick up detailed, distinct features salient to human eyes
 
