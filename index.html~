@@ -44,7 +44,7 @@
 
 <p>Someone skeptical as statisticians starts to question the validity of the above finding. Alternative explanations abound. Could the Simpson's paradox be at play? An attempt was made to quantify the trip speed patterns over time using regression models, adjusting for trip routes. </p>
 
-<p>As it turns out, there are no obvious increase in your travelling speed in the early morning, as suggested by some <a href="http://animalnewyork.com/2014/data-reveals-worst-times-traffic-nyc/">naive analysis</a>. There seem to be no pick up in speed after rush hour either: it is just slow throughout the day.</p>
+<p>As it turns out, there are no obvious increase in your travelling speed in the early morning, as suggested by some <a href="http://animalnewyork.com/2014/data-reveals-worst-times-traffic-nyc/">naive analysis</a>. There seem to be no slow-downs either: it is just slow throughout the day.</p>
 
 <p><img src="NYCtaxi/effect.png" alt=""></p>
 
