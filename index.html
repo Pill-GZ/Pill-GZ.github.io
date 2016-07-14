@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>Page Name by Pill-GZ</title>
+    <title>Looking at large data sets with small programs by Pill-GZ</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -11,18 +11,50 @@
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">An Infrequently Updated Blog</h1>
-      <h2 class="project-tagline">...almost surely</h2>
+      <h1 class="project-name">Looking at large data sets with small programs</h1>
+      <h2 class="project-tagline"></h2>
     </section>
 
     <section class="main-content">
-      <h1>
-<a id="this-page-is-under-construction" class="anchor" href="#this-page-is-under-construction" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>This page is under construction</h1>
-
-<h2>
+      <h2>
 <a id="an-exploration-with-folio-data-set" class="anchor" href="#an-exploration-with-folio-data-set" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>An Exploration with Folio Data Set</h2>
 
-<p>Follow this <a href="Folio/presentation.html">link</a> to the project presentation</p>
+<p>The UCI data repository contains a <a href="http://archive.ics.uci.edu/ml/datasets/Folio">Folio Data Set</a> that consists of pictures of tree leaves. Size of the data set stands at 1GB. We attempted to build a classifier for the leaves based solely on the image data. The classifier achieved 90% accuracy with simple methods like PCA (with some twists) and KNN, better than the paper in which the data was originally presented.</p>
+
+<p>Convolutional Neural Networks should easily this accuracy. Then again the total length of the code that runs this classifier is less than 100 lines, and runs in a matter of seconds (apart from IO, which really depends on your hard drive). I imagine CNN will take a lot longer.</p>
+
+<p>Follow this <a href="Folio/presentation.html">link</a> to the project presentation.</p>
+
+<h2>
+<a id="an-exploration-with-new-york-taxi-data-set" class="anchor" href="#an-exploration-with-new-york-taxi-data-set" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>An Exploration with New York Taxi Data Set</h2>
+
+<p>The <a href="https://nycopendata.socrata.com/">NYC Open Data</a> program is publishing data sets from the city government "as part of an initiative to improve the accessibility, transparency, and accountability".</p>
+
+<p>I looked at the yellow cab data collected in the month of December 2015. The data set consists of over 11 million entries of trip records, roughly 1.7GB in disk volume.</p>
+
+<blockquote>
+<p>This data set contains information on the millions of trips taken by New York City’s taxis on an annual basis. Records include pick-up and drop-off dates/times, pick-up and drop-off locations, trip distances, itemized fares, rate types, payment types, and driver-reported passenger counts.</p>
+</blockquote>
+
+<p>Some exploratory analysis seem to suggest that vehicle speed of the taxis is faster during rush hours, defying the "common sense" that one should avoid the morning rush because streets are packed and cars move slower. </p>
+
+<p>There is, however, counfounding in the co-variates: pick-up/drop-off combination of trips vary over time. Long distance trips, including trips to the airports, tends to take place in the morning, inflating the average speed. It is not immediately clear if traveling in the morning is actually faster. </p>
+
+<p>Someone skeptical as statisticians starts to question the validity of the above finding. Alternative explanations abound. Could the Simpson's paradox be at play? An attempt was made to quantify the trip speed patterns over time using regression models, adjusting for trip routes. </p>
+
+<p>As it turns out, there are no obvious increase in your travelling speed in the early morning, as suggested by some <a href="http://animalnewyork.com/2014/data-reveals-worst-times-traffic-nyc/">naive analysis</a>. There seem to be no slow-downs either: it is just slow throughout the day.</p>
+
+<p><img src="NYCtaxi/effect.png" alt=""></p>
+
+<p>General lessons learned here:</p>
+
+<ol>
+<li><p>Preprocessing and data cleaning can be a little challenging, and time-consuming, even for a well-oraganized data set like this.</p></li>
+<li><p>The ability to process large data sets is important. Next time I will use <a href="http://spark.apache.org/">Spark</a>.</p></li>
+<li><p>The actual statistical part is relatively easy, once the right (interesting) question is identified. What can or cannot be answered is just as important as how they are answered, if not more so. In that I completely agree with <a href="https://en.wikiquote.org/wiki/John_Tukey">John Tucky</a>.</p></li>
+</ol>
+
+<p>Follow this <a href="NYCtaxi/QR.pdf">link</a> to the project report.</p>
 
       <footer class="site-footer">
 
